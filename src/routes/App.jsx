@@ -1,6 +1,10 @@
 import React from 'react';
-import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Layout } from '../containers/Layout';
+import {Home} from '../pages/Home.jsx';
+import {NotFound} from '../pages/NotFound.jsx';
+
+import '../styles/global.scss';
 
 const App = () => {
   return (
@@ -13,8 +17,7 @@ const App = () => {
             element={<Home />}
           />
           <Route 
-            exact
-            path="/"
+            path="*"
             element={<NotFound />}
           />
         </Routes>
