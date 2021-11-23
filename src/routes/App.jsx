@@ -10,7 +10,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <Layout>
-        <Routes>
+      <Routes>
           <Route 
             exact
             path="/"
