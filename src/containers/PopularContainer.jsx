@@ -1,5 +1,6 @@
 import React from "react";
 import {Cards} from '../components/Cards';
+import '../styles/PopularProducts.scss';
 const PopularContainer = () => {
   return (
     <section class="popular-products">

@@ -1,5 +1,5 @@
 import React from "react";
-
+import '../styles/PopularProducts.scss';
 const Cards = () => {
   return (
     <div class="product-card">
