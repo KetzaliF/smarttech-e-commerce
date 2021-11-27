@@ -1,16 +1,21 @@
 @import 'vars';
 
 nav {
+	background: var(--bg-header);
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	padding: 0 24px;
-	border-bottom: 1px solid var(--very-light-pink);
+	border-bottom: 1px solid var(--bg-light-blue);
+	
 }
 .menu {
 	display: none;
 }
-.logo {
-	width: 100px;
+.nav-logo {
+	width: 270px;
+	
+	align-self: center;
 }
 .navbar-left ul,
 .navbar-right ul {
@@ -30,28 +35,30 @@ nav {
 .navbar-left ul li a,
 .navbar-right ul li a {
 	text-decoration: none;
-	color: var(--very-light-pink);
-	border: 1px solid var(--white);
+	color: var(--white);
 	padding: 8px;
 	border-radius: 8px;
 }
 .navbar-left ul li a:hover,
 .navbar-right ul li a:hover {
-	border: 1px solid var(--hospital-green);
-	color: var(--hospital-green);
+	border: 1px solid var(--white);
+	color: var(--white);
 }
 .navbar-email {
-	color: var(--very-light-pink);
+	color: var(--white);
 	font-size: var(--sm);
 	margin-right: 12px;
+	cursor: pointer;
 }
 .navbar-shopping-cart {
 	position: relative;
+	cursor: pointer;
+	color: var(--white);
 }
 .navbar-shopping-cart div {
 	width: 16px;
 	height: 16px;
-	background-color: var(--hospital-green);
+	background-color: var(--white);
 	border-radius: 50%;
 	font-size: var(--sm);
 	font-weight: bold;

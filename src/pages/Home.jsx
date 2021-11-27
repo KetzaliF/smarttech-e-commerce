@@ -8,19 +8,21 @@ import {Deals} from '../components/Deals';
 import { MostSold } from '../containers/MostSold';
 import { Footer } from '../components/Footer';
 import Header from '../components/Header';
+import { PromoStore } from '../components/PromoStore';
 
 const Home = () => {
   return (
 
-    <Layout> 
+    <div> 
       <Header />
+      <PromoStore />
       <SectionInfo />
       <Categories/>
       <PopularContainer />  
       <Deals />
       <MostSold />
       <Footer />
-    </Layout >
+    </div >
   );
 }
 

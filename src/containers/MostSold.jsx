@@ -7,7 +7,7 @@ const MostSold = () => {
   return (
     <section className="the-most-sold">
       <p className="subtitle the-most-sold__title">The most sold</p>
-      <div class="the-most-sold__container">
+      <div className="the-most-sold__container">
         <MostSoldCard />
       </div>
     </section>
