@@ -2,6 +2,14 @@ import React from "react";
 
 import '../styles/Footer.scss';
 
+import Visa from '../assets/icons/icons-general/visa.png';
+import PayPayl from '../assets/icons/icons-general/paypal.png';
+import MasterCard from '../assets/icons/icons-general/masterCard.png';
+import AmericanExpres from '../assets/icons/icons-general/american-express.png';
+import Instagram from '../assets/icons/icons-general/instagram-icon.svg';
+import Twitter from '../assets/icons/icons-general/twitter-icon.svg';
+import FaceBook from '../assets/icons/icons-general/facebook-icon.svg';
+
 const Footer = () => {
   return (
     <footer className="footer">
@@ -19,11 +27,11 @@ const Footer = () => {
           </p>
 
           <div className="smarttech__pay">
-            <img src="assets/visa.png" alt="" className="payment-methods" />
-            <img src="assets/paypal.png" alt="" className="payment-methods" />
-            <img src="assets/masterCard.png" alt="" className="payment-methods" />
+            <img src={Visa} alt="" className="payment-methods" />
+            <img src={PayPayl} alt="" className="payment-methods" />
+            <img src={MasterCard} alt="" className="payment-methods" />
             <img
-              src="assets/american-express.png"
+              src={AmericanExpres}
               alt=""
               className="payment-methods"
             />
@@ -87,6 +95,10 @@ const Footer = () => {
           <div className="social">
             <h4 className="social__title">Social Media</h4>
             <div className="social-media">
+              <img src={FaceBook} alt="" className="facebook" />
+              <img src={Instagram}alt="" className="instagram"/>
+              <img src={Twitter} alt="" className="twitter"/>
+              
               {/* <svg
                 className="facebook"
                 xmlns="http://www.w3.org/2000/svg"
