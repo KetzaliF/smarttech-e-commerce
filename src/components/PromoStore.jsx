@@ -4,6 +4,7 @@ import {ButtonPrimary} from '../components/ButtonPrimary';
 import '@styles/PromoStore.scss';
 
 import Muck from '../assets/assets-store/mockup-header.png';
+import { ProductPreView } from "./ProductPreView";
 
 
 const PromoStore = () => {
@@ -12,7 +13,7 @@ const PromoStore = () => {
       <div className="header-container">
         <div className="header__img">
           <img
-            src="../assets/mockup-header.png"
+            src={Muck}
             alt="mockup computer with phone"
             className="header__img-mockup"
           />
@@ -28,6 +29,7 @@ const PromoStore = () => {
           <ButtonPrimary />
         </div>
       </div>
+      <ProductPreView />
     </section>
   );
 };

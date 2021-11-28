@@ -1,12 +1,12 @@
 @import 'vars';
 
 nav {
-	background: var(--bg-header);
+	background: var(--dark-blue);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: 0 24px;
-	border-bottom: 1px solid var(--bg-light-blue);
+	border-bottom: 1px solid var(--line-blue);
 	
 }
 .menu {
@@ -53,7 +53,7 @@ nav {
 .navbar-shopping-cart {
 	position: relative;
 	cursor: pointer;
-	color: var(--white);
+	fill: var(--white);
 }
 .navbar-shopping-cart div {
 	width: 16px;

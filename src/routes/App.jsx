@@ -6,6 +6,7 @@ import {NotFound} from '../pages/NotFound.jsx';
 import {AboutUs} from '../pages/AboutUs';
 
 import '../styles/global.scss';
+import { ContactUs } from '../pages/ContactUs';
 
 const App = () => {
   return (
@@ -21,6 +22,11 @@ const App = () => {
             exact
             path="/about-us"
             element={<AboutUs />}
+          />
+          <Route 
+            exact
+            path="/contact-us"
+            element={<ContactUs />}
           />
           <Route 
             path="*"

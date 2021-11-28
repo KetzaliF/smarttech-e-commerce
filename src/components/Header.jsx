@@ -1,9 +1,10 @@
 import React from "react";
-import "../styles/Header.scss";
+import "@styles/Header.scss";
 import { Menu } from "./Menu";
 
-import Logo from '@assets/icons/icons-general/logo-white.png';
-import ShoppingCart from '@assets/icons/icons-general/cart-icon.svg'
+import Logo from "@assets/icons/icons-general/logo-white.png";
+import ShoppingCart from "@assets/icons/icons-general/cart-icon.svg";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -13,27 +14,23 @@ const Header = () => {
         <img src={Logo} alt="logo" className="nav-logo" />
         <ul>
           <li>
-            <a href="/">All</a>
+            <Link to="/all-products">All</Link>
           </li>
           <li>
-            <a href="/">Smarttech Innovation</a>
+            <Link to="/">Smarttech Innovation</Link>
           </li>
           <li>
-            <a href="/">About Us</a>
+            <Link to="/about-us">About Us</Link>
           </li>
           <li>
-            <a href="/">Contact Us </a>
+            <Link to="/contact-us">Contact Us </Link>
           </li>
         </ul>
       </div>
       <div className="navbar-right">
         <ul>
-          <li className="navbar-email" >
-            dante@example.com
-          </li>
-          <li
-            className="navbar-shopping-cart"
-          >
+          <li className="navbar-email">dante@example.com</li>
+          <li className="navbar-shopping-cart">
             <img src={ShoppingCart} alt="shopping cart" />
           </li>
         </ul>
@@ -42,4 +39,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export { Header };
