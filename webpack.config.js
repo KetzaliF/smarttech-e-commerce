@@ -1,27 +1,27 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const path = require('path');
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const path = require("path");
 
 module.exports = {
-  entry: './src/index.js',
+  entry: "./src/index.js",
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js',
-    publicPath: '/',
+    path: path.resolve(__dirname, "dist"),
+    filename: "bundle.js",
+    publicPath: "/",
   },
-  mode: 'development',
+  mode: "development",
   resolve: {
-    extensions: ['.js', '.jsx'],
+    extensions: [".js", ".jsx"],
     alias: {
-			'@components': path.resolve(__dirname, 'src/components/'),
-			'@containers': path.resolve(__dirname, 'src/containers/'),
-      '@context': path.resolve(__dirname, 'src/context/'),
-			'@hooks': path.resolve(__dirname, 'src/hooks/'),
-			'@pages': path.resolve(__dirname, 'src/pages/'),
-			'@styles': path.resolve(__dirname, 'src/styles/'),
-			'@assets': path.resolve(__dirname, 'src/assets/'),
-      '@utils': path.resolve(__dirname, 'src/utils/'),
-		}
+      "@components": path.resolve(__dirname, "src/components/"),
+      "@containers": path.resolve(__dirname, "src/containers/"),
+      "@context": path.resolve(__dirname, "src/context/"),
+      "@hooks": path.resolve(__dirname, "src/hooks/"),
+      "@pages": path.resolve(__dirname, "src/pages/"),
+      "@styles": path.resolve(__dirname, "src/styles/"),
+      "@assets": path.resolve(__dirname, "src/assets/"),
+      "@utils": path.resolve(__dirname, "src/utils/"),
+    },
   },
   module: {
     rules: [
@@ -29,41 +29,37 @@ module.exports = {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
-          loader: 'babel-loader',
-        }
+          loader: "babel-loader",
+        },
       },
       {
         test: /\.html$/,
         use: [
           {
-            loader: 'html-loader',
-          }
-        ]
+            loader: "html-loader",
+          },
+        ],
       },
       {
         test: /\.(css|scss)$/,
-        use: [
-          "style-loader",
-          "css-loader",
-          "sass-loader",
-        ]
+        use: ["style-loader", "css-loader", "sass-loader"],
       },
       {
         test: /\.(png|svg|jpg|gif)$/,
-        type: 'asset'
-      }
-    ]
+        type: "asset",
+      },
+    ],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './public/index.html',
-      filename: './index.html',
+      template: "./public/index.html",
+      filename: "./index.html",
     }),
     new MiniCssExtractPlugin({
-      filename: '[name].css'
+      filename: "[name].css",
     }),
   ],
   devServer: {
     historyApiFallback: true,
   },
-}
+};

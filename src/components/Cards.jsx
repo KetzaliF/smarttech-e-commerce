@@ -1,5 +1,6 @@
 import React from "react";
 import '../styles/PopularProducts.scss';
+
 const Cards = () => {
   return (
     <div className="product-card">
@@ -19,4 +20,4 @@ const Cards = () => {
   );
 };
 
-export {Cards};
+export { Cards };

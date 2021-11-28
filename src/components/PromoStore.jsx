@@ -1,10 +1,10 @@
 import React from "react";
-import {ButtonPrimary} from '../components/ButtonPrimary';
+import { ButtonPrimary } from '../components/ButtonPrimary';
 
 import '@styles/PromoStore.scss';
 
 import Muck from '../assets/assets-store/mockup-header.png';
-import { ProductPreView } from "./ProductPreView";
+
 
 
 const PromoStore = () => {
@@ -29,7 +29,6 @@ const PromoStore = () => {
           <ButtonPrimary />
         </div>
       </div>
-      <ProductPreView />
     </section>
   );
 };
