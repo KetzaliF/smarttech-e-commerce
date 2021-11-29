@@ -1,11 +1,15 @@
 import React from "react";
 import "../styles/Deals.scss";
+
+
+import Deal from '../assets/assets-store/mockup-deal.png';
 const Deals = () => {
   return (
-    <div className="deals__container">
+    <div className="deals">
+      <div className="deals__container">
       <img
         className="deals__img"
-        src="../assets/mockup-deal.png"
+        src={Deal}
         alt="Huawei Matebook x pro"
       />
       <div className="deals__info">
@@ -23,6 +27,7 @@ const Deals = () => {
         </div>
         <button className="btn-primary btn-deals">See product</button>
       </div>
+    </div>
     </div>
   );
 };

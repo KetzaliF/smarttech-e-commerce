@@ -5,7 +5,7 @@ const PopularContainer = () => {
   return (
     <section className="popular-products">
       <h2 className="subtitle popular-products__title">Popular Products</h2>
-      <div className="popular-products__container">
+      <div >
         <Cards />
       </div>
     </section>

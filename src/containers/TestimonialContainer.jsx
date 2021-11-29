@@ -12,10 +12,7 @@ const TestimonialContainer = () => {
           Adipisci velit, sed quia non numquam.
         </p>
       </div>
-
-      <div className="testimonials__grid">
-        <TestimonialCard />
-      </div>
+      <TestimonialCard />
     </section>
   );
 };

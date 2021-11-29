@@ -14,10 +14,7 @@ const OurTeam = () => {
           et.
         </p>
       </div>
-
-      <div className="team__container">
-        <TeamMember />
-      </div>
+      <TeamMember />
     </section>
   );
 };

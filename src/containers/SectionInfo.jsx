@@ -3,7 +3,7 @@ import { InfoItem } from "../components/InfoItem";
 import "../styles/SectionInfo.scss";
 const SectionInfo = () => {
   return (
-    <section className="container-section">
+    <section >
       <InfoItem />
     </section>
   );
