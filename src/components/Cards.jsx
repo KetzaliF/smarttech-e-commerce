@@ -1,6 +1,8 @@
-import React from "react";
+import React, {useContext} from "react";
+import { AppContext } from "../context/AppContext";
 import '../styles/PopularProducts.scss';
 
+import addToCartImage from '../assets/icons/icons-general/cart-icon.svg';
 const Cards = () => {
   return (
     <div className="product-card">
@@ -13,7 +15,7 @@ const Cards = () => {
       <div className="product-card__price-buy">
         <p className="product-price">$280</p>
         <div className="product-buy">
-          <i className="bi bi-cart3 product-icon-buy"></i>
+          <img src={addToCartImage} alt="" />
         </div>
       </div>
     </div>

@@ -1,4 +1,4 @@
-@import 'vars';
+@use 'vars';
 
 .ProductItem {
 	width: 240px;
@@ -8,6 +8,12 @@
 	height: 240px;
 	border-radius: 20px;
 	object-fit: cover;
+}
+
+.other-cart {
+	width: 34px;
+	height: 34px;
+	color: violet;
 }
 .product-info {
 	display: flex;
