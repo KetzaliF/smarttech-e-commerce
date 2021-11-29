@@ -3,12 +3,49 @@ import '../styles/Categories.scss';
 
 const CategorieItem = () => {
   return (
-    <div className="categorie">
-      <div className="categorie__container">
-        {/* <img className="categorie__img" src="../assets/icons/computer-icon.png" alt="computer icon" /> */}
+    <div className="categories__container">
+      <div className="categorie">
+        <div className="categorie__container">
+          <img className="categorie__img" src="" alt="computer icon" />
+        </div>
+        <p className="categorie__title">Computers</p>
       </div>
-      <p className="categorie__title">Computers</p>
+
+      <div className="categorie">
+        <div className="categorie__container">
+          <img className="categorie__img" src="" alt="computer icon" />
+        </div>
+        <p className="categorie__title">Phones</p>
       </div>
+
+      <div className="categorie">
+        <div className="categorie__container">
+          <img className="categorie__img" src="" alt="computer icon" />
+        </div>
+        <p className="categorie__title">Phones</p>
+      </div>
+
+      <div className="categorie">
+        <div className="categorie__container">
+          <img className="categorie__img" src="" alt="computer icon" />
+        </div>
+        <p className="categorie__title">Phones</p>
+      </div>
+
+      <div className="categorie">
+        <div className="categorie__container">
+          <img className="categorie__img" src="" alt="computer icon" />
+        </div>
+        <p className="categorie__title">Phones</p>
+      </div>
+
+      <div className="categorie">
+        <div className="categorie__container">
+          <img className="categorie__img" src="" alt="computer icon" />
+        </div>
+        <p className="categorie__title">Phones</p>
+      </div>
+    </div>
   );
 }
-export {CategorieItem};
+export { CategorieItem };

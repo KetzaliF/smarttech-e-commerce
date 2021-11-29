@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { AppContext } from "../context/AppContext";
 
 import "@styles/ProductItem.scss";
-import ShoppingCart from "@assets/icons/icons-general/bag-icon.png";
+import ShoppingCart from "../assets/icons/icons-general/logo-coloful.svg";
 
 const ProductItem = ({ product }) => {
 	const { addToCart } = useContext(AppContext);

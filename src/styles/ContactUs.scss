@@ -2,8 +2,8 @@
 
 .contact_container {
   background-color: var(--icons-hover);
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  place-items: center;
   width: 100%;
   height: 100vh;
   justify-content: space-evenly;
@@ -121,7 +121,7 @@ input[type="password"]:focus,
 }
 
 .button_message > .contact {
-  margin: 18px auto;
+  margin: 18px auto 10px auto;
   border: none;
   width: 161px;
   height: 37px;
