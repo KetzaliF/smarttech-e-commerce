@@ -3,7 +3,7 @@ import { AppContext } from '../context/AppContext';
 
 import '@styles/OrderItem.scss';
 
-import Arrow from "@assets/icons/icons-about/icon-before.svg";
+import DeleteIcon from "@assets/icons/icons-general/x.png";
 const OrderItem = ({ product }) => {
 	const { removeFromCart } = useContext(AppContext);
 
@@ -18,7 +18,8 @@ const OrderItem = ({ product }) => {
 			<p>{product.title}</p>
 			<p>$ {product.price}.00</p>
 			<img
-				src={Arrow}
+				src={DeleteIcon}
+				className="OrderItem-delete"
 				alt="close"
 				onClick={() => handleRemove(product)}
 			/>
