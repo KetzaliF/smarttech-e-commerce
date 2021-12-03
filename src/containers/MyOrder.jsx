@@ -3,7 +3,6 @@ import { OrderItem } from "@components/OrderItem";
 import { AppContext } from "../context/AppContext";
 import "@styles/MyOrder.scss";
 
-import Arrow from "@assets/icons/icons-about/icon-before.svg";
 const MyOrder = () => {
   const { state } = useContext(AppContext);
 
@@ -17,21 +16,22 @@ const MyOrder = () => {
   return (
     <aside className="MyOrder">
       <div className="title-container">
-        <img src={Arrow} alt="arrow" />
-        <p className="title">My order</p>
-      </div>
+        <p className="titleOrder">My order</p>
+      </div >
       <div className="my-order-content">
-				{state.cart.map(product => (
+        <div className="order-items-container">
+        {state.cart.map(product => (
 					<OrderItem product={product} key={`orderItem-${product.id}`}/>
 				))}
+        </div>
         
         <div className="order">
           <p>
-            <span>Total</span>
+            <span>TOTAL</span>
           </p>
           <p>$ {sumTotal()}</p>
         </div>
-        <button className="primary-button">Checkout</button>
+        <button className="btn-primary btn-myOrder">Checkout</button>
       </div>
     </aside>
   );
