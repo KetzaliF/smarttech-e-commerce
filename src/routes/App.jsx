@@ -10,6 +10,9 @@ import { ContactUs } from '@pages/ContactUs';
 import { AppContext } from '@context/AppContext';
 import { useInitialState } from '@hooks/useInitialState';
 import { AllProducts } from '../pages/AllProducts';
+import { Login } from '../pages/Login';
+import { RecoveryPassword } from '../pages/RecoveryPassword';
+import { CreateAccount } from '../pages/CreateAccount';
 
 const App = () => {
   const initialState = useInitialState();
@@ -32,6 +35,21 @@ const App = () => {
               exact
               path="/about-us"
               element={<AboutUs />}
+            />
+            <Route
+              exact
+              path="/login"
+              element={<Login />}
+            />
+            <Route
+              exact
+              path="/create-account"
+              element={<CreateAccount />}
+            />
+            <Route
+              exact
+              path="/recovery-password"
+              element={<RecoveryPassword />}
             />
             <Route
               exact

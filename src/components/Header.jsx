@@ -52,6 +52,7 @@ const Header = () => {
           >
             <img src={ShoppingCart} alt="shopping cart" />
           </li>
+          {state.cart.length > 0 ? <div>{state.cart.length}</div> : null}
         </ul>
         {toggle ? <Menu /> : null}
         {toggleOrders ? <MyOrder /> : null}
