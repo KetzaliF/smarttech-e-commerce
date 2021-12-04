@@ -1,7 +1,7 @@
 import React from "react";
 
-import Banda from '../assets/assets-about/teacher-banda.png';
-import Valiz from '../assets/assets-about/teachcer-veliz.png';
+import Banda from '../assets/assets-about/teacher-banda.jpg';
+import Valiz from '../assets/assets-about/teacher-veliz.jpg';
 
 
 
