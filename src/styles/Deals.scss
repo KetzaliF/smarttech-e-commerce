@@ -8,7 +8,7 @@
   background-size: cover;
   background-position: center;
   padding: 12px 0;
-  margin-top: 40px;
+  margin-top: 50px;
 }
 
 .deals__container {
@@ -76,7 +76,13 @@
   margin-top: 20px;
 }
 
-@media screen and (min-width: 500px) and (max-width: 1030px) {
+@media screen and (min-width: 500px) and (max-width: 810px){
+  .deals {
+    height: 550px;
+  }
+}
+
+@media screen and (min-width: 810px) and (max-width: 1030px) {
   .deals__container {
     flex-direction: row;
     padding: 12px;

@@ -1,19 +1,21 @@
 @import 'vars';
 
 nav {
-	background: var(--dark-blue);
+	width: 100%;
+	background: var(--bg-menu);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: 0 24px;
-	border-bottom: 1px solid var(--line-blue);
-	
+	border-bottom: 1px solid var(--icons-hover);
+	position: sticky;
+	top: 0;
 }
 .menu {
 	display: none;
 }
 .nav-logo {
-	width: 270px;
+	width: 230px;
 	
 	align-self: center;
 }
@@ -30,7 +32,7 @@ nav {
 	display: flex;
 }
 .navbar-left ul {
-	margin-left: 12px;
+	margin-left: 28px;
 }
 .navbar-left ul li a,
 .navbar-right ul li a {
@@ -58,9 +60,10 @@ nav {
 	width: 16px;
 	height: 16px;
 	background-color: var(--white);
+
 	border-radius: 50%;
 	font-size: var(--sm);
-	font-weight: bold;
+	font-weight: 500;
 	position: absolute;
 	top: -6px;
 	right: -3px;
@@ -68,7 +71,7 @@ nav {
 	justify-content: center;
 	align-items: center;
 }
-@media (max-width: 640px) {
+@media (max-width: 950px) {
 	.menu {
 		display: block;
 	}
@@ -77,5 +80,11 @@ nav {
 	}
 	.navbar-email {
 		display: none;
+	}
+}
+
+@media (max-width: 400px) {
+	.nav-logo {
+		width: 180px;
 	}
 }

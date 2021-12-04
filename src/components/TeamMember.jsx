@@ -82,7 +82,7 @@ const TeamMember = () => {
             <img class="icon-social-media" src={Instagram} alt="instagram icon" />
           </a>
 
-          <a href="www.linkedin.com/in/ketzali-flores-710989224" target="_blank">
+          <a href="https://www.linkedin.com/in/ketzali-flores-710989224" target="_blank">
             <img class="icon-social-media" src={Linkedin} alt="linkedin icon" />
           </a>
 
@@ -117,7 +117,7 @@ const TeamMember = () => {
             <img class="icon-social-media" src={GitHub} alt="github icon" />
           </a>
 
-          <a href="https://twitter.com/" target="_blank">
+          <a href="www.twitter.com/" target="_blank">
             <img class="icon-social-media" src={Twitter} alt="twitter icon" />
           </a>
         </div>

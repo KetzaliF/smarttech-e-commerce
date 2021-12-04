@@ -2,15 +2,15 @@
 
 .MyOrder {
 	width: 360px;
-	padding: 24px;
+	padding: 24px 15px 24px 24px;
 	box-sizing: border-box;
 	position: absolute;
 	right: 0;
 	background-color: var(--white);
 	top: 60px;
 	bottom: auto;
-	border-radius: 6px;
-	border: 1px solid var(--gray);
+	border-radius: 10px;
+	box-shadow: 0 0 20px var(--shadow-card);
 }
 .title-container {
 	display: flex;
@@ -19,43 +19,45 @@
 	transform: rotate(180deg);
 	margin-right: 14px;
 }
-.title {
-	font-size: var(--lg);
-	font-weight: bold;
+.titleOrder {
+	font-size: 1.3em;
+	font-weight: 600;
+	margin-bottom: 20px;
 }
 .order {
-	display: grid;
-	grid-template-columns: auto 1fr;
-	gap: 16px;
-	align-items: center;
-	background-color: var(--text-input-field);
-	margin-bottom: 24px;
-	border-radius: 8px;
-	padding: 0 24px;
-}
-.order p:nth-child(1) {
-	display: flex;
-	flex-direction: column;
+	width: 100%;
+	height: 35px;
+	background-color: rgba(156, 87, 203, 0.25);
+   border-radius: 10px;
+   margin: 20px auto;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
 }
 .order p span:nth-child(1) {
-	font-size: var(--md);
-	font-weight: bold;
+	font-size: 1em;
+   font-weight: 500;
 }
 .order p:nth-child(2) {
-	text-align: end;
-	font-weight: bold;
+	font-size: 1.25em;
+   font-weight: 600;
 }
-
-.primary-button {
-	background-color: var(--purple);
-	border-radius: 8px;
-	border: none;
-	color: var(--white);
+.order-items-container {
+	max-height: 60vh;
+   overflow-y: scroll;
+}
+.order-items-container::-webkit-scrollbar{
+   width: 8px;
+}
+.order-items-container::-webkit-scrollbar-thumb{
+   background: rgba(128, 128, 128, 0.4);
+   border-radius: 8px;
+}
+.btn-myOrder {
 	width: 100%;
-	cursor: pointer;
 	font-size: var(--md);
-	font-weight: bold;
-	height: 50px;
+	font-weight: 600;
+	height: 35px;
 }
 @media (max-width: 640px) {
 	.MyOrder {

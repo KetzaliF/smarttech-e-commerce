@@ -2,11 +2,10 @@
 
 .Menu {
 	width: 180px;
-	height: 230px;
+	height: 220px;
 	background-color: var(--white);
-	border: 1px solid var(--gray);
-	border-radius: 6px;
-	padding: 20px 20px 0 20px;
+	border-radius: 10px;
+	padding: 15px 15px 0 15px;
 	position: absolute;
 	top: 60px;
 	right: 40px;
@@ -23,7 +22,8 @@
 }
 .Menu ul li:nth-child(1),
 .Menu ul li:nth-child(2) {
-	font-weight: bold;
+	font-size: var(--md);
+	font-weight: 600;
 }
 .Menu ul li:last-child {
 	padding-top: 20px;

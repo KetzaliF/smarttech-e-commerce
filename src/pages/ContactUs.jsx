@@ -2,6 +2,10 @@ import React from "react";
 
 import '@styles/ContactUs.scss';
 
+import EmailContact from '../assets/icons/icons-general/email-icon-login.svg';
+import MessageContact from '../assets/icons/icons-general/message-icon.svg';
+import ProfileContact from '../assets/icons/icons-general/user-icon.svg';
+
 const ContactUs = () => {
   return (
     <div class="contact_container">
@@ -22,14 +26,22 @@ const ContactUs = () => {
             <h4>Name</h4>
             <div class="input_Icon">
               <input type="text" placeholder="smarttech Innovation" />
-              <i class="fas fa-user"></i>
+              <img
+                class="icon-contact"
+                src={ProfileContact}
+                alt="user icon"
+              />
             </div>
           </div>
           <div class="input_contact">
             <h4>Email</h4>
             <div class="input_Icon">
               <input type="text" placeholder="smarttech@innovation.com" />
-              <i class="fas fa-envelope"></i>
+              <img
+                class="icon-contact"
+                src={EmailContact}
+                alt="email icon"
+              />
             </div>
           </div>
           <div class="input_contact">
@@ -43,7 +55,11 @@ const ContactUs = () => {
                 rows="10"
                 placeholder="Lorem ipsum, dolor sit . . ."
               ></textarea>
-              <i class="fas fa-comment-alt" aria-hidden="true"></i>
+              <img
+                class="icon-contact"
+                src={MessageContact}
+                alt="email icon"
+              />
             </div>
             <div class="button_message">
               <input type="submit" value="SEND MESSAGE" class="contact" />

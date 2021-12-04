@@ -2,39 +2,36 @@
 
 .contact_container {
   background-color: var(--icons-hover);
-  display: grid;
-  place-items: center;
   width: 100%;
   height: 100vh;
-  justify-content: space-evenly;
-  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .contact_txt {
   width: 320px;
-  height: 30%;
-  margin: 25px auto 35px auto;
+  height: 30vh;
   color: var(--white);
   text-align: center;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  place-items: center;
 }
 
 .txt > h1 {
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 2.5em;
+  font-weight: 600;
 }
 
 .txt > p {
   margin-top: 10px;
-  font-size: 12px;
+  font-size: 1.1em;
 }
 
 .contact_form {
   width: 100%;
-  height: 70%;
+  height: 70vh;
   background-color: var(--white);
   border-radius: 30px 30px 0 0;
   box-shadow: 0px -10px 30px rgba(0, 119, 182, 0.502);
@@ -52,12 +49,16 @@
   margin-top: 20px;
 }
 
+input, textarea{
+  outline: none;
+}
+
 .input_contact > h4 {
-  font-size: 16px;
+  font-size: 13px;
   color: var(--gray);
   margin: 15px 0 10px 19px;
   position: relative;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .input_contact {
@@ -94,30 +95,18 @@ input[type="password"] {
   color: var(--gray);
 }
 
-input[type="text"]:focus,
-input[type="password"]:focus,
-.input-Icon textarea[class="comment"]:focus {
-  border-color: var(--icons-hover);
-  box-shadow: 0 0 8px 0 var(--icons-hover);
-}
-
 .input_Icon {
   position: relative;
 }
 
-.input_Icon i {
+.icon-contact {
   position: absolute;
   left: 20px;
   top: 8px;
   padding: 2px 2px;
-  color: rgba(128, 128, 128, 0.6);
+  opacity: 0.6;
   transition: 0.3s;
-}
-
-.input_Icon input[type="text"]:focus + i,
-.input_Icon input[type="password"]:focus + i,
-.input_Icon textarea[class="comment"]:focus + i {
-  color: var(--icons-hover);
+  height: 20px;
 }
 
 .button_message > .contact {
@@ -126,7 +115,8 @@ input[type="password"]:focus,
   width: 161px;
   height: 37px;
   color: var(--white);
-  font-size: 15px;
+  font-size: 14px;
+  font-weight: 500;
   background: var(--icons-hover);
   border-radius: 10px;
   cursor: pointer;
@@ -136,89 +126,21 @@ input[type="password"]:focus,
 }
 
 @media screen and (min-width: 500px) and (max-width: 1030px) {
-  body {
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  .contact_container {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-  }
   .contact_txt {
-    width: 100%;
-    height: 30%;
-    justify-content: center;
-  }
-  .txt {
     width: 80%;
   }
-  .txt > h1 {
-    font-size: 44px;
-    margin-top: 10px;
-  }
-  .txt > p {
-    font-size: 24px;
-    margin-bottom: 40px;
-    line-height: 50px;
-  }
+
   .contact_form {
-    width: 100%;
-    height: 70%;
-  }
-  .con_form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-  .con_form > h1 {
-    font-size: 45px;
+    padding: 40px 100px;
   }
 
   input[type="text"],
-  input[type="password"],
-  .input_Icon textarea[class="comment"] {
-    font-size: 22px;
-    color: var(--gray);
-    background-color: #e2e2e299;
-    width: 550px;
-    height: 65px;
-    padding-left: 80px;
+  input[type="password"] {
+    width: 100%;
   }
-  .input_Icon textarea[class="comment"] {
-    width: 550px;
-    height: 150px;
-  }
-  .input_contact {
-    margin-bottom: 5px;
-  }
-  .input_contact > h4 {
-    font-size: 25px;
-    margin-bottom: 10px;
-  }
-  .button_message > input[class="contact"] {
-    width: 250px;
-    height: 49px;
-    font-size: 22px;
-    border-radius: 28px;
-  }
-  .input_Icon i {
-    left: 25px;
-    top: 8px;
-    padding: 9px 5px;
-    transition: 0.3s;
-    size: 50px;
-  }
-  i.fas,
-  i.fab {
-    font-size: 30px;
-    width: 20px;
-    height: 40px;
+
+  .button_message > .contact {
+    margin-top: 40px;
   }
 }
 
@@ -231,7 +153,6 @@ input[type="password"]:focus,
   }
   .contact_container {
     width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: row;
   }
@@ -296,7 +217,7 @@ input[type="password"]:focus,
   }
   .input_contact > h4 {
     margin-top: 40px;
-    font-size: 20px;
+    font-size: 18px;
   }
   .button_message {
     margin: 0 auto;
@@ -304,16 +225,9 @@ input[type="password"]:focus,
   .button_message > .contact {
     font-family: "Poppins";
   }
-  .input_Icon i {
+  .icon-contact {
     left: 20px;
-    top: 8px;
-    padding: 9px 5px;
-    transition: 0.3s;
-  }
-  i.fas,
-  i.fab {
-    font-size: 22px;
-    width: 20px;
-    height: 40px;
+    top: 15px;
+    height: 22px;
   }
 }

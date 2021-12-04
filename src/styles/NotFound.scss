@@ -1,6 +1,7 @@
 @use "vars";
 
 .container {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -49,8 +50,7 @@
 }
 .btn_back {
   background: var(--button-color);
-  width: 428px;
-  height: 37px;
+  padding: 8px 60px;
   border-radius: 10px;
   border: none;
   font-size: 15px;
@@ -58,7 +58,6 @@
   font-family: "Poppins";
   cursor: pointer;
   text-decoration: none;
-  padding: 8px 70px;
 }
 @media screen and (min-width: 500px) and (max-width: 1030px) {
   .img_error {
@@ -83,25 +82,17 @@
     font-size: 24px;
   }
   .btn_back {
-    width: 238px;
-    height: 60px;
     font-size: 25px;
   }
 }
 
 @media screen and (min-width: 1030px) and (max-width: 1700px) {
-  body {
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
   .container {
-    width: 100%;
-    height: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
+    align-items: center;
   }
   .img_error {
     width: 55%;

@@ -1,6 +1,7 @@
 @use "vars";
 
 .container-section {
+  width: 100%;
   background: var(--bg-light-blue);
   font-family: var(--font-main);
   display: flex;
@@ -8,7 +9,6 @@
   align-items: center;
   flex-wrap: wrap;
   padding-top: 30px;
-  margin-bottom: 45px;
 }
 
 .section__card {
@@ -40,17 +40,13 @@
 @media screen and (min-width: 500px) and (max-width: 1030px) {
   .container-section {
     padding: 30px 20px 0 20px;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
 }
 
 @media screen and (min-width: 1030px) {
   .container-section {
     padding: 30px 75px 0 75px;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
-
-  /* .section__card{
-     margin-bottom: 0;
-  } */
 }

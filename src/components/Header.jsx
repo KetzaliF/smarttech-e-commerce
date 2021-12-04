@@ -5,6 +5,7 @@ import { AppContext } from '../context/AppContext';
 import { MyOrder } from '../containers/MyOrder';
 
 import Logo from "@assets/icons/icons-general/logo-white.png";
+import MenuIcon from "@assets/icons/icons-general/menu-icon.svg";
 import ShoppingCart from "@assets/icons/icons-general/cart-icon.svg";
 import { Link } from "react-router-dom";
 
@@ -19,7 +20,7 @@ const Header = () => {
 
   return (
     <nav>
-      <img src="" alt="menu" className="menu" />
+      <img src={MenuIcon} alt="menu" className="menu" />
       <div className="navbar-left">
         <img src={Logo} alt="logo" className="nav-logo" />
         <ul>
@@ -51,8 +52,9 @@ const Header = () => {
           
           >
             <img src={ShoppingCart} alt="shopping cart" />
+
+            {state.cart.length > 0 ? <div>{state.cart.length}</div> : null}
           </li>
-          {state.cart.length > 0 ? <div>{state.cart.length}</div> : null}
         </ul>
         {toggle ? <Menu /> : null}
         {toggleOrders ? <MyOrder /> : null}
